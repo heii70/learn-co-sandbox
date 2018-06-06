@@ -1,4 +1,6 @@
-/* Closures are nested functions that are able to access parent variables even after the parent function finishes. This is the way JS sets private variables and methods like the "private" keyword in Java and C++ */
+// Closures are nested functions that are able to access parent variables 
+// even after the parent function finishes. This is the way JS sets
+// private variables and methods like the "private" keyword in Java and C++
 
 //------------------- Single nested method -------------------//
 /*
@@ -42,7 +44,7 @@ console.log(myScope.innerScope1());
 console.log(myScope.innerScope2());
 */
 
-//------------------ Shortcut: Don't need "outerFunction" declaration------------------//
+//------------------ Shortcut: Don't need "outerFunction" declaration ------------------//
 
 var myScope = (function() {
   var innerVariable = "I'm sort of a secret.";
