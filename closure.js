@@ -66,5 +66,5 @@ var myScope = (function() {
   }
 })()
 
-console.log(myScope.innerScope1());
-console.log(myScope.innerScope2());
+console.log(myScope.innerScope1()); // I'm sort of a secret.
+console.log(myScope.innerScope2()); // I'm sort of a secret too.
