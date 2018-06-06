@@ -14,7 +14,7 @@ function outerFunction() {
   }
   
   var myScope = outerFunction();
-  console.log(myScope());
+  console.log(myScope()); // myScope() == outerFunction()()
 */
 
 //------------------- Multiple nested methods -----------------//
