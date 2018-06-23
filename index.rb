@@ -1,15 +1,24 @@
-class Dog
-
-  def set_name(dogs_name)
-    @this_dogs_name = dogs_name
+class Person
+ 
+  def initialize(first_name, last_name)
+    @first_name = first_name
+    @last_name = last_name
   end
  
-  def get_name
-    @this_dogs_name
+  def name=(full_name)
+    first_name, last_name = full_name.split
+    @first_name = first_name
+    @last_name = last_name
   end
+ 
+  def name
+    "#{@first_name} #{@last_name}".strip
+  end
+ 
 end
 
-lassie = Dog.new
-lassie.set_name("Lassie")
- 
-puts lassie.get_name
+kanye = Person.new("Kanye","West")
+puts kanye.name
+
+kanye.name = "Yeezy"
+puts kanye.name
