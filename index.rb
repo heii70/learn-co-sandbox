@@ -1,6 +1,6 @@
 class Dog
 
-  def set_name(dogs_name)
+  def set_name=(dogs_name)
     @this_dogs_name = dogs_name
   end
  
@@ -10,6 +10,6 @@ class Dog
 end
 
 lassie = Dog.new
-lassie.set_name("Lassie")
+lassie.set_name = "Lassie"
  
 puts lassie.get_name
